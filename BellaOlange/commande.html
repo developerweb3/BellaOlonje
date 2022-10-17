@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25"/>
+    <meta name="viewport" content="width=device-width, maximum-scale=5.0"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="commande.css">
+</head>
+<body>
+    <div id="accueil">
+        <header>
+            <nav class="nav">
+                <div class="headermenu">
+                    <input type="checkbox" id="toggle"/>
+                    <label for="toggle">
+                        <span></span>
+                    </label>
+                    <ul>
+                        <li><a href="menupizza.html">Home</a></li>
+                        <li><a href="menupizza.html#menupizza">Pizzas</a></li>
+                        <li><a href="menupizza.html#menuburger">Burgers</a></li>
+                        <li><a href="menupizza.html#menusalade">Salades</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="ul2">
+                        <a href="menupizza.html">Home</a>
+                        <a href="menupizza.html#menupizza">Pizzas</a>
+                        <a href="menupizza.html#menuburger">Burgers</a>
+                        <a href="menupizza.html#menusalade">Salades</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="img"><img src="/img/Bella Olonje logo 111 1.png"></div>
+        </header>
+        <div class="texte">
+            <p>Food app</p>
+            <h1>Chez Bella chaque désir s'aditionne.</h1>
+        </div>
+        <h1 class="menuinfo">Vos informations</h1>
+        <form class="information">
+            <div class="info">
+                <label>Nom</label>
+                <input type="text" placeholder="Nom"/>
+            </div>
+            <div class="info">
+                <label>Prenom</label>
+                <input type="text" placeholder="Prenom"/>
+            </div>
+            <div class="info">
+                <label>Telephone</label>
+                <input type="text" placeholder="Telephone"/>
+            </div>
+            <div class="info">
+                <label>Email</label>
+                <input type="text" placeholder="Email"/>
+            </div>
+        </form>
+        <h1 class="menuinfo">Votre commande</h1>
+        <h3 class="menuinfo2">Pizza 4 fromages</h3>
+        <h4 class="menuinfo2">Suppléments</h4>
+        <form class="supplements">
+            <div class="ing">
+                <label>Ingredient</label>
+                <input list="Ingredient" placeholder="Fromage"/>
+                <datalist id="Ingredient">
+                    <option value="Mozarella">
+                    <option value="Emmental">
+                    <option value="Gouda">
+                    <option value="Chevre">
+                    <option value="Roquefort">
+                </datalist>
+            </div>
+            <div class="quant">
+                <label>Quantités</label>
+                <input type="number" placeholder="1"/>
+            </div>
+            <div class="ing">
+                <label>Ingredient 2</label>
+                <input list="Ingredient" placeholder="Fromage"/>
+                <datalist id="Ingredient">
+                    <option value="Mozarella">
+                    <option value="Emmental">
+                    <option value="Gouda">
+                    <option value="Chevre">
+                    <option value="Roquefort">
+                </datalist>
+            </div>
+            <div class="quant">
+                <label>Quantités</label>
+                <input type="number" placeholder="1"/>
+            </div>
+            <div class="ing">
+                <label>Ingredient 3</label>
+                <input list="Ingredient" placeholder="Fromage"/>
+                <datalist id="Ingredient">
+                    <option value="Mozarella">
+                    <option value="Emmental">
+                    <option value="Gouda">
+                    <option value="Chevre">
+                    <option value="Roquefort">
+                </datalist>
+            </div>
+            <div class="quant">
+                <label>Quantités</label>
+                <input type="number" placeholder="1"/>
+            </div>
+            <div class="ing">
+                <label>Ingredient 4</label>
+                <input list="Ingredient" placeholder="Fromage"/>
+                <datalist id="Ingredient">
+                    <option value="Mozarella">
+                    <option value="Emmental">
+                    <option value="Gouda">
+                    <option value="Chevre">
+                    <option value="Roquefort">
+                </datalist>
+            </div>
+            <div class="quant">
+                <label>Quantités</label>
+                <input type="number" placeholder="1"/>
+            </div>
+        </form>
+        <div class="frite">
+            <input type="radio" name="Quantités" checked>
+            <label>Avec frites</label>
+            <input type="radio" name="Quantités">
+            <label>Sans Frites</label>
+        </div>
+        <div class="boide">
+            <h2>Boissons</h2>
+            <h2>Desserts</h2>
+        </div>
+        <div class="choix">
+            <div class="boisson">
+                <input type="checkbox">
+                <label>Coca Cola</label>
+                <input type="number" placeholder="1">
+                <input type="checkbox">
+                <label>Fanta</label>
+                <input type="number" placeholder="1">
+                <input type="checkbox">
+                <label>Evian</label>
+                <input type="number" placeholder="1">
+            </div>
+            <div class="boisson">
+                <input type="checkbox">
+                <label>Tiramisu</label>
+                <input type="number" placeholder="1">
+                <input type="checkbox">
+                <label>Cheese Cake</label>
+                <input type="number" placeholder="1">
+                <input type="checkbox">
+                <label>Fraisier</label>
+                <input type="number" placeholder="1">
+            </div>
+        </div>
+        <h1 class="menuinfo">Adresse de livraison</h1>
+        <form class="information">
+            <div class="info">
+                <label>Nom</label>
+                <input type="text" placeholder="Nom"/>
+            </div><div class="info">
+                <label>Prenom</label>
+                <input type="text" placeholder="Prenom"/>
+            </div>
+            <div class="info">
+                <label>Telephone</label>
+                <input type="text" placeholder="Telephone"/>
+            </div>
+            <div class="info">
+                <label>Email</label>
+                <input type="text" placeholder="Email"/>
+            </div>
+            <div class="info">
+                <label>Adresse</label>
+                <input type="text" placeholder="Adresse"/>
+            </div>
+            <div class="info">
+                <label>Ville</label>
+                <input type="text" placeholder="Ville"/>
+            </div>
+            <div class="info">
+                <label>Pays</label>
+                <input type="text" placeholder="Pays"/>
+            </div>
+        </form>  
+        <button type="button">
+            Envoyer
+        </button>
+        <footer>
+            <div class="button">
+                <img src="/img/twit.png" alt="">
+                <img src="/img/fb.png" alt="">
+                <img src="/img/insta.png" alt="">
+            </div>
+            <p>&copyCopyright 2020 BienManger.com</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+#accueil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.nav{
+  visibility: visible;
+}
+.texte{  
+  display: flex;   
+  flex-direction: column;  
+  justify-content: center;  
+  text-align: center;  
+  color: white;  
+  width: 100%;  
+  height: 300px;  
+  font-size: 20px;   
+  background-image: url(img/Rectangle\ 48.png);  
+  margin-bottom: 10px;   
+  margin-top: 10px;  
+  background-size: cover;  
+  background-position-x: center;  
+  background-repeat: no-repeat;
+}
+#menupizza{
+  background-color: orangered;
+  text-align: center;
+  position: relative;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#menuburger{
+  background-color: orangered;
+  text-align: center;
+  position: relative;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#menusalade{
+  background-color: orangered;
+  text-align: center;
+  position: relative;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.menu{
+  display:flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.articles{
+  text-align: start;
+  border: 2px solid orangered;
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  width: 98%;
+}
+.articles img{
+  object-fit: cover;
+  width: 100%;
+}
+.texte2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 250px;
+  font-size: 15px;
+  background-image: url(img/Rectangle\ 47.png);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+footer{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
+button{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  margin-bottom: 10px;
+  align-self: end;
+  margin-right: 10px;
+}
+ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 84px;
+  left: -110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  transition: 0.8s ease;
+  padding: 20px;
+}
+.ul2{
+  visibility: hidden;
+}
+a{
+  text-decoration: none;
+  color: #070707;
+  font-size: 3em;
+}
+a:hover{
+  color: orangered;
+}
+.headermenu input{
+  display: none; 
+} 
+.headermenu label{
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+span, span::before, span::after{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: black;
+  position: relative;
+  transition: 1s ease;
+} 
+span::before, span::after{
+  position: absolute;
+  content: "";
+}
+span::before{
+  bottom: 10px;
+}
+span::after{
+  top: 10px;
+}
+input:checked ~ ul{
+  left: 0;
+}
+input:checked ~ label span{
+  transform: rotate(45deg);
+}
+input:checked ~ label span::before{
+  display: none;
+}
+input:checked ~ label span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+   
+@media (min-width: 600px) {
+  .menu{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .articles{
+      width: 45%;
+  }
+  .articles img {
+    height: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu{
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .articles{
+    width: 30%;
+  }
+  .articles img {
+    height: 70%;
+  }
+  .ul2{
+    visibility: visible;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: fixed;
+    justify-content: space-evenly;
+    font-size: 7px;
+  }
+  .nav{
+    visibility: hidden;
+  }
+}

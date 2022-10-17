@@ -1,0 +1,329 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+#accueil{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.nav{
+  visibility: visible;
+}
+.texte{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 300px;
+  font-size: 20px;
+  background-image: url(img/Rectangle\ 48.png);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+.menuinfo{
+  display:flex;
+  margin : 10px;
+  font-size: 30px;
+}
+.information{  
+  display: flex;  
+  flex-direction: column;   
+  width: 95%;  
+  align-self: center;
+}
+.information2{  
+  display: flex;  
+  flex-direction: column;
+  width: 95%;  
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.info{
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  align-self: center;
+}
+.info input{
+  width: 100%;
+}
+.parent-div{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 95%;
+  align-self: center;
+  align-items: center;
+}
+.parent-div input[type=file]{
+  left: 0;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  font-size: 90px;
+}
+.btn-upload{
+  background-color: orangered;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.captcha{
+  display: flex;
+  background-color:#f9f9f9;
+	border:2px solid #d3d3d3;
+	border-radius:5px;
+	color:#4c4a4b;
+	justify-content:center;
+	align-items:center;
+  text-align: center;
+  align-self: center;
+}
+.spinner{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  margin: 2em 1em;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  font-size: 1.75em;
+  margin-right: 1em;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  margin: 0.5em 1em;
+}
+.logo img{
+  width: 2em;
+  height: 2em;
+}
+.logo p{
+  color: #9d9ba7;
+  font-weight: 700;
+  margin: 0.4em 0 0.2em 0;
+}
+.logo small{
+  color: #9d9ba7;
+}
+.message{
+  display: flex;
+  height: 900px;
+}
+#mess{
+  height: 200px;
+}
+.map1{
+  display: flex;
+  align-self: center;
+  visibility: visible;
+}
+.map2{
+  visibility: hidden;
+  display: none;
+}
+.map3{
+  visibility: hidden;
+  display: none;
+}
+.message{
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+button{
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  margin: 10px;
+  align-self: end;
+  font-family: 'Montserrat';
+}
+footer{
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+}
+ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 84px;
+  left: -110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  transition: 0.8s ease;
+  padding: 20px;
+}
+.ul2{
+  display: none;
+  visibility: hidden;
+}
+a{
+  text-decoration: none;
+  color: #070707;
+  font-size: 3em;
+}
+a:hover{
+  color: orangered;
+}
+.headermenu input{
+  display: none; 
+} 
+.headermenu label{
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+span, span::before, span::after{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: black;
+  position: relative;
+  transition: 1s ease;
+} 
+span::before, span::after{
+  position: absolute;
+  content: "";
+}
+span::before{
+  bottom: 10px;
+}
+span::after{
+  top: 10px;
+}
+input:checked ~ ul{
+  left: 0;
+}
+input:checked ~ a{
+  left: 0;
+  transform: none;
+}
+input:checked ~ label span{
+  transform: rotate(45deg);
+}
+input:checked ~ label span::before{
+  display: none;
+}
+input:checked ~ label span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px){
+  .captcha{
+    flex-direction: column;
+    width: 95%;
+  }
+  .text{
+		margin:.5em!important;
+		text-align:center;
+	}
+	.logo{
+		align-self: center!important;
+	}
+	.spinner{
+		margin:2em .5em .5em .5em!important;
+	}
+}
+@media screen and (min-width: 600px){
+  .map1{
+    visibility: hidden;
+    display: none;
+  }
+  .map3{
+    visibility: hidden;
+    display: none;
+  }
+  .map2{
+    display: flex;
+    align-self: center;
+    visibility: visible;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 250px;
+    width: 80%;
+    align-self: center;
+  }
+  .ul2{
+    visibility: visible;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: fixed;
+    justify-content: space-evenly;
+    font-size: 7px;
+  }
+  .nav{
+    visibility: hidden;
+  }
+  .map1{
+    visibility: hidden;
+    display: none;
+  }
+  .map2{
+    visibility: hidden;
+    display: none;
+  }
+  .map3{
+    display: flex;
+    align-self: center;
+    visibility: visible;
+  }
+}
